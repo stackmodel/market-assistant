@@ -1,3 +1,6 @@
+
+![market-assistant](https://github.com/user-attachments/assets/60209de5-6e3d-4e27-86eb-b4f0a9c74400)
+
 **Market Assistant: Stock and Financial Data Chatbot**
 
 This is a market data assistant application built using Streamlit, AWS Bedrock Converse, FMPSDK, and other supporting libraries. The chatbot leverages Anthropic Claude Sonnet model and interacts with financial data APIs to provide real time stock prices, financials, and income statements for various companies.
