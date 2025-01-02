@@ -1,0 +1,85 @@
+Initial prompt:
+[
+  {
+    "role": "user",
+    "content": [
+      {
+        "text": "Can you provide the current stock price of Amazon?"
+      }
+    ]
+  }
+]
+Output so far:
+{
+  "message": {
+    "role": "assistant",
+    "content": [
+      {
+        "toolUse": {
+          "toolUseId": "tooluse_pF9AF7X5R-S70Kp4OlWz1A",
+          "name": "get_stock_price",
+          "input": {
+            "symbol": "AMZN"
+          }
+        }
+      }
+    ]
+  }
+}
+Running (get_stock_price) tool...
+tool_args: {'symbol': 'AMZN'}
+Calling get_stock_price with arguments {'symbol': 'AMZN'}
+Final output:
+{
+  "message": {
+    "role": "assistant",
+    "content": [
+      {
+        "text": "The current stock price of Amazon.com, Inc. (AMZN) is $223.75."
+      }
+    ]
+  }
+}
+
+Initial prompt:
+[
+  {
+    "role": "user",
+    "content": [
+      {
+        "text": "Please share the basic financial details (such as market cap, industry, sector, and beta) for Tesla."
+      }
+    ]
+  }
+]
+Output so far:
+{
+  "message": {
+    "role": "assistant",
+    "content": [
+      {
+        "toolUse": {
+          "toolUseId": "tooluse_xdEu_pjqR4-LQL94VeHAeg",
+          "name": "get_company_financials",
+          "input": {
+            "symbol": "TSLA"
+          }
+        }
+      }
+    ]
+  }
+}
+Running (get_company_financials) tool...
+tool_args: {'symbol': 'TSLA'}
+Calling get_company_financials with arguments {'symbol': 'TSLA'}
+Final output:
+{
+  "message": {
+    "role": "assistant",
+    "content": [
+      {
+        "text": "Based on the financial details from the tool, here are the key points for Tesla:\n\n- Market Cap: $1.385 trillion, making it one of the largest companies by market capitalization\n- Industry: Auto Manufacturers \n- Sector: Consumer Cyclical\n- Beta: 2.295, indicating relatively high volatility compared to the overall market\n- Tesla designs, manufactures and sells electric vehicles as well as energy storage products. It is led by CEO Elon Musk.\n\nSo in summary, Tesla is a large, volatile consumer cyclical company focused on electric vehicles and clean energy solutions within the automotive industry."
+      }
+    ]
+  }
+}
