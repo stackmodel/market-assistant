@@ -57,7 +57,7 @@ class ToolsList:
     def get_income_statement(self, symbol):
         try:
             # Fetch stock data using fmpsdk quote
-            stock = fmpsdk.quote(apikey=api_key, symbol=symbol)
+            stock = fmpsdk.income_statement(apikey=api_key, symbol=symbol)
             
             # Extract the first item from the list (stock data)
             if stock:
